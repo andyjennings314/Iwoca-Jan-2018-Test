@@ -33,7 +33,7 @@
             <div class="music-playlist">
             	<ul class="playlist-list">
                 	<li ng-repeat="song in ctrl.playlist" ng-click="ctrl.selectASong(song)" ng-class="{'active': song == ctrl.currentSong}">
-                    	{{song.title}} - {{song.artist}}
+                    	{{song.title}} - {{song.artist}} ({{ctrl.calculateTime(song.duration)}})
                     </li>
                 </ul>
             </div>
