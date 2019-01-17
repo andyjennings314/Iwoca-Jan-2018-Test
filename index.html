@@ -8,6 +8,23 @@
 
     <body ng-controller="homeCtrl as ctrl">
         
+        <div id="music-app">
+        	<div class="music-player">
+            	<img ng-src="ctrl.currentSong.thumbnail" />
+            	<p class="player-title">{{ctrl.currentSong.title}}</p>
+                <p class="player-artist">{{ctrl.currentSong.artist}}</p>
+                
+            </div>
+            <div class="music-playlist">
+            	<ul class="playlist-list">
+                	<li ng-repeat="song in ctrl.playlist" ng-click="ctrl.selectASong(song)">
+                    	{{song.title}} - {{song.artist}}
+                    </li>
+                </ul>
+            </div>
+        
+        </div>
+        
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js"></script>
         <script src="andyjennings_iwoca.js"></script>
     </body>
