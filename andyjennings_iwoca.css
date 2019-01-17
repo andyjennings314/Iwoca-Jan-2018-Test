@@ -1,6 +1,8 @@
 body{
 	margin:0;
 	font-family: Verdana, Geneva, sans-serif;
+	background: black;
+	color: white;
 }
 
 #music-app {
@@ -10,7 +12,8 @@ body{
 
 .music-player {
 	margin: 10px;
-	border: 1px solid red;
+	border: 1px solid #999;
+	background-color: #333;
 	padding: 15px;
 }
 
@@ -57,15 +60,24 @@ body{
 }
 
 .player-buttonbox button {
-    background: orange;
-    border: 1px solid green;
+    background: #aa2d26;
+    border: 1px solid #630202;
     width: 50px;
     height: 30px;
 }
 
+.player-buttonbox button:disabled{
+	
+background: #333;
+	
+border-color: #999;
+}
+
 .player-timer {
 	width: 100%;
-	background-color: red;
+	background-color: #aa2d26;
+	border: 1px solid #630202;
+	border-radius: 2px;
 	height: 14px;
 	margin: 10px 0;
 	position: relative;
@@ -74,7 +86,8 @@ body{
 .timer-widget {
 	position:absolute;
 	top: -3px;
-	background-color: limegreen;
+	background-color: red;
+	border: 1px solid #d7190f;
 	width: 0;
 	height: 0;
 	padding: 10px;
@@ -101,7 +114,8 @@ body{
 
 .music-playlist {
 	margin: 10px;
-	border: 1px solid blue;
+	border: 1px solid #999;
+	background-color: #333;
 }
 
 .playlist-list {
@@ -115,9 +129,11 @@ body{
 }
 
 .playlist-list li:nth-of-type(2n) {
-	background-color: pink;
+	background-color: #666;
 }
 
 .playlist-list li.active {
-	font-weight: bold;	
+	font-weight: bold;
+	background: #630202;
+	color: #ff0e00;
 }
