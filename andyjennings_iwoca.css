@@ -1,12 +1,47 @@
+body{
+	margin:0;
+}
+
+.music-player {
+	margin: 10px;
+	border: 1px solid red;
+}
+
+.music-playlist {
+	margin: 10px;
+	border: 1px solid blue;
+
+}
+
+.playlist-list {
+	margin:0;
+	padding: 0;
+	list-style:none;
+}
+
+.playlist-list li {
+	padding: 5px;
+}
+
+.playlist-list li:nth-of-type(2n) {
+	background-color: pink;
+}
+
+.playlist-list li.active {
+	font-weight: bold;	
+}
+
 .player-timer {
 	width: 100%;
 	background-color: red;
-	height: 20px;
+	height: 14px;
+	margin: 5px 0;
 	position: relative;
 }
 
 .timer-widget {
 	position:absolute;
+	top: -3px;
 	background-color: limegreen;
 	width: 0;
 	height: 0;
@@ -14,8 +49,4 @@
 	border-radius: 10px;
 	margin-left: -10px;
 	transition: left 1s;
-}
-
-.active {
-	font-weight: bold;	
 }
