@@ -7,28 +7,11 @@ body{
 	border: 1px solid red;
 }
 
-.music-playlist {
-	margin: 10px;
-	border: 1px solid blue;
-
-}
-
-.playlist-list {
-	margin:0;
-	padding: 0;
-	list-style:none;
-}
-
-.playlist-list li {
-	padding: 5px;
-}
-
-.playlist-list li:nth-of-type(2n) {
-	background-color: pink;
-}
-
-.playlist-list li.active {
-	font-weight: bold;	
+.music-player img {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-right: 10px;
 }
 
 .player-timer {
@@ -49,4 +32,27 @@ body{
 	border-radius: 10px;
 	margin-left: -10px;
 	transition: left 1s;
+}
+
+.music-playlist {
+	margin: 10px;
+	border: 1px solid blue;
+}
+
+.playlist-list {
+	margin:0;
+	padding: 0;
+	list-style:none;
+}
+
+.playlist-list li {
+	padding: 5px;
+}
+
+.playlist-list li:nth-of-type(2n) {
+	background-color: pink;
+}
+
+.playlist-list li.active {
+	font-weight: bold;	
 }

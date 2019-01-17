@@ -8,11 +8,11 @@
 		self.songTimer = null;
 		
 		self.playlist = [
-			{artist: "Dimmu Borgir", title: "Progenies Of The Great Apocalypse", duration: 325, position: 0, thumbnail: ""},
-			{artist: "The Eighties Matchbox B-Line Disaster", title: "Mister Mental", duration: 175, position: 0, thumbnail: ""},
-			{artist: "Laibach", title: "Tanz Mit Laibach", duration: 261, position: 0, thumbnail: ""},
-			{artist: "Onedice", title: "Twice As Sick", duration: 126, position: 0, thumbnail: ""},
-			{artist: "Raging Speedhorn", title: "Oh How The Great Have Fallen", duration: 224, position: 0, thumbnail: ""}		 
+			{artist: "Dimmu Borgir", title: "Progenies Of The Great Apocalypse", duration: 325, position: 0, thumbnail: "dimmu.jpg"},
+			{artist: "The Eighties Matchbox B-Line Disaster", title: "Mister Mental", duration: 175, position: 0, thumbnail: "mistermental.jpg"},
+			{artist: "Laibach", title: "Tanz Mit Laibach", duration: 261, position: 0, thumbnail: "wat.jpg"},
+			{artist: "Onedice", title: "Twice As Sick", duration: 126, position: 0, thumbnail: "onedice.jpg"},
+			{artist: "Raging Speedhorn", title: "Oh How The Great Have Fallen", duration: 224, position: 0, thumbnail: "rsh.jpg"}		 
 		];
 		self.currentSong = {artist: "to begin playback", title: "Click a song", duration: 0, position: 0, thumbnail: ""};
 		
