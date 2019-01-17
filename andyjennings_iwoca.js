@@ -4,6 +4,8 @@
 	var homeCtrl = function ($filter, $timeout) {
         var self = this;
 		
+		self.isSongPlaying = false;
+		
 		self.playlist = [
 			{artist: "Dimmu Borgir", title: "Progenies Of The Great Apocalypse", duration: 5.416, position: 0, thumbnail: ""},
 			{artist: "The Eighties Matchbox B-Line Disaster", title: "Mister Mental", duration: 2.916, position: 0, thumbnail: ""},
@@ -16,12 +18,17 @@
 		self.selectASong = function(selectedSong) {
 			//stop playback here, then...
 			self.currentSong = selectedSong;
+			self.isSongPlaying = true;
+			self.playSong();
+		}
+		
+		self.togglePlay = function(){
+			self.isSongPlaying = !self.isSongPlaying;
 			self.playSong();
 		}
 		
 		self.playSong = function(){
 			//will play/pause the selected song
-			alert("la la la");
 		}
 
     }

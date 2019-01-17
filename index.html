@@ -13,6 +13,9 @@
             	<img ng-src="ctrl.currentSong.thumbnail" />
             	<p class="player-title">{{ctrl.currentSong.title}}</p>
                 <p class="player-artist">{{ctrl.currentSong.artist}}</p>
+                <button class="playbutton" ng-click="ctrl.togglePlay()" ng-disabled="ctrl.currentSong.duration == ctrl.currentSong.position">
+	                <i class="fa" ng-class="ctrl.isSongPlaying ? 'fa-pause' : 'fa-play'"></i>
+                </button>
                 
             </div>
             <div class="music-playlist">
