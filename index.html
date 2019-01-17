@@ -10,12 +10,15 @@
         
         <div id="music-app">
         	<div class="music-player">
-            	<img ng-src="ctrl.currentSong.thumbnail" />
+            	<img ng-src="{{ctrl.currentSong.thumbnail}}" />
             	<p class="player-title">{{ctrl.currentSong.title}}</p>
                 <p class="player-artist">{{ctrl.currentSong.artist}}</p>
-                <button class="playbutton" ng-click="ctrl.togglePlay()" ng-disabled="ctrl.currentSong.duration == ctrl.currentSong.position">
+                <button class="player-button" ng-click="ctrl.togglePlay()" ng-disabled="ctrl.currentSong.duration == ctrl.currentSong.position">
 	                <i class="fa" ng-class="ctrl.isSongPlaying ? 'fa-pause' : 'fa-play'"></i>
                 </button>
+                <div class="player-timer">
+                	<span class="timer-widget" ng-style="{'left': ctrl.durationPercent()}"></span>
+                </div>
                 
             </div>
             <div class="music-playlist">

@@ -15,6 +15,10 @@
 		];
 		self.currentSong = {artist: "to begin playback", title: "Click a song", duration: 0, position: 0, thumbnail: ""};
 		
+		self.durationPercent = function(){
+			return (self.currentSong.duration / self.currentSong.position || 0) + '%'
+		}
+		
 		self.selectASong = function(selectedSong) {
 			//stop playback here, then...
 			self.currentSong = selectedSong;
