@@ -20,6 +20,12 @@
 			return (((self.currentSong.position / self.currentSong.duration) || 0 ) * 100) + '%'
 		}
 		
+		self.calculateTime = function(time){
+			var seconds = time % 60;
+			var minutes = time < 60 ? 0 : Math.floor(time/60);
+			return minutes + ":" + (seconds < 10 ? "0"+seconds : seconds);
+		}
+		
 		self.selectASong = function(selectedSong) {
 			$interval.cancel(self.songTimer);
 			self.currentSong = selectedSong;
