@@ -13,4 +13,9 @@
 	padding: 10px;
 	border-radius: 10px;
 	margin-left: -10px;
+	transition: left 1s;
+}
+
+.active {
+	font-weight: bold;	
 }
