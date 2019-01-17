@@ -14,7 +14,7 @@
 			{artist: "Onedice", title: "Twice As Sick", duration: 126, position: 0, thumbnail: "onedice.jpg"},
 			{artist: "Raging Speedhorn", title: "Oh How The Great Have Fallen", duration: 224, position: 0, thumbnail: "rsh.jpg"}		 
 		];
-		self.currentSong = {artist: "to begin playback", title: "Click a song", duration: 0, position: 0, thumbnail: ""};
+		self.currentSong = {artist: "to begin playback", title: "Click a song", duration: 0, position: 0, thumbnail: "default.jpg"};
 		
 		self.durationPercent = function(){
 			return (((self.currentSong.position / self.currentSong.duration) || 0 ) * 100) + '%'
