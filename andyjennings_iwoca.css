@@ -1,0 +1,16 @@
+.player-timer {
+	width: 100%;
+	background-color: red;
+	height: 20px;
+	position: relative;
+}
+
+.timer-widget {
+	position:absolute;
+	background-color: limegreen;
+	width: 0;
+	height: 0;
+	padding: 10px;
+	border-radius: 10px;
+	margin-left: -10px;
+}
