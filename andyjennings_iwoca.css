@@ -1,24 +1,73 @@
 body{
 	margin:0;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+#music-app {
+	display: flex;
+	flex-direction: column;
 }
 
 .music-player {
 	margin: 10px;
 	border: 1px solid red;
+	padding: 15px;
 }
 
-.music-player img {
+@media only screen and (min-width: 600px) {
+  #music-app {
+  	flex-direction: row-reverse;
+  }
+
+	.music-player {
+		flex-grow:2;
+	}
+
+	.music-playlist {
+		flex-grow:3;
+	}
+}
+
+.player-details {
+    min-height: 100px;
+	margin-bottom:10px;
+}
+
+.player-details p {
+	margin:0;
+}
+
+.player-details .player-title {
+	font-size:30px;
+}
+
+.player-details .player-artist {
+	font-size:24px;
+}
+
+.player-details .player-duration {
+	font-size:14px;
+}
+
+.player-details img {
 	width: 100px;
 	height: 100px;
 	float: left;
 	margin-right: 10px;
 }
 
+.player-buttonbox button {
+    background: orange;
+    border: 1px solid green;
+    width: 50px;
+    height: 30px;
+}
+
 .player-timer {
 	width: 100%;
 	background-color: red;
 	height: 14px;
-	margin: 5px 0;
+	margin: 10px 0;
 	position: relative;
 }
 
@@ -32,6 +81,22 @@ body{
 	border-radius: 10px;
 	margin-left: -10px;
 	transition: left 1s;
+}
+
+.player-times {
+	min-height: 10px;
+}
+
+.player-times span {
+	font-size: 10px;
+}
+
+.player-times .time-played {
+	float: left;
+}
+
+.player-times .time-left {
+	float:right;
 }
 
 .music-playlist {
