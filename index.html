@@ -13,11 +13,16 @@
             	<img ng-src="{{ctrl.currentSong.thumbnail}}" />
             	<p class="player-title">{{ctrl.currentSong.title}}</p>
                 <p class="player-artist">{{ctrl.currentSong.artist}}</p>
+    	        <p class="player-duration">{{ctrl.currentSong.duration}}</p>
                 <button class="player-button" ng-click="ctrl.togglePlay()" ng-disabled="ctrl.currentSong.duration == ctrl.currentSong.position">
 	                <i class="fa" ng-class="ctrl.isSongPlaying ? 'fa-pause' : 'fa-play'"></i>
                 </button>
                 <div class="player-timer">
                 	<span class="timer-widget" ng-style="{'left': ctrl.durationPercent()}"></span>
+                </div>
+                <div class="player-times">
+                	<span class="time-played">{{ctrl.currentSong.position}}</span>
+	                <span class="time-left">{{ctrl.currentSong.duration - ctrl.currentSong.position}}</span>
                 </div>
                 
             </div>
